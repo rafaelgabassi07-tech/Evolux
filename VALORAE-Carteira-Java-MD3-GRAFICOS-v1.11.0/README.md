@@ -1,4 +1,4 @@
-# VALORAE Carteira Java/XML — v1.12.0 GRÁFICOS E CONTRATOS
+# VALORAE Carteira Java/XML — v1.11.0 GRÁFICOS E CONTRATOS
 
 Versão focada em compatibilidade com o VALORAE Proxy v21.12.58, especialmente gráficos, contratos de app e contratos de classe de ativo.
 

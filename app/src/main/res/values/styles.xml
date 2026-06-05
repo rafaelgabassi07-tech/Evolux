@@ -1,0 +1,35 @@
+<resources>
+    <style name="Theme.Valorae" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/valorae_primary</item>
+        <item name="colorPrimaryContainer">@color/valorae_primary_container</item>
+        <item name="colorSecondary">@color/valorae_positive</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/valorae_surface</item>
+        <item name="shapeAppearanceSmallComponent">@style/Shape.Valorae.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/Shape.Valorae.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/Shape.Valorae.Large</item>
+    </style>
+
+    <style name="Shape.Valorae.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+    <style name="Shape.Valorae.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20dp</item>
+    </style>
+    <style name="Shape.Valorae.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">28dp</item>
+    </style>
+
+    <style name="Valorae.SectionTitle" parent="">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">24dp</item>
+        <item name="android:layout_marginBottom">12dp</item>
+        <item name="android:textColor">@color/valorae_text_primary</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+</resources>

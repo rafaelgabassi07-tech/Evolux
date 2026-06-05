@@ -1,0 +1,867 @@
+
+> Configure project :app
+WARNING: The option setting 'android.enableJetifier=true' is deprecated.
+The current default is 'false'.
+It will be removed in version 10.0 of the Android Gradle plugin.
+
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preDebugBuild UP-TO-DATE
+> Task :app:generateDebugBuildConfig UP-TO-DATE
+> Task :app:generateDebugResources UP-TO-DATE
+> Task :app:packageDebugResources UP-TO-DATE
+> Task :app:processDebugNavigationResources UP-TO-DATE
+> Task :app:parseDebugLocalResources UP-TO-DATE
+> Task :app:generateDebugRFile UP-TO-DATE
+> Task :app:compileDebugKotlin NO-SOURCE
+> Task :app:javaPreCompileDebug UP-TO-DATE
+
+> Task :app:compileDebugJavaWithJavac FAILED
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:17: error: cannot find symbol
+import br.com.valorae.carteira.data.StartupSyncStore;
+                                   ^
+  symbol:   class StartupSyncStore
+  location: package br.com.valorae.carteira.data
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:18: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.PortfolioTemporalSummary;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:19: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.Position;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:21: error: package br.com.valorae.carteira.ui.base does not exist
+import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                      ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:22: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.DateUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:23: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.JsonUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:24: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.MoneyUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:26: error: cannot find symbol
+public class HomeFragment extends BaseAsyncFragment {
+                                  ^
+  symbol: class BaseAsyncFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:38: error: cannot find symbol
+    private PortfolioTemporalSummary lastTemporal;
+            ^
+  symbol:   class PortfolioTemporalSummary
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:252: error: cannot find symbol
+    private void renderTimeline(PortfolioTemporalSummary temporal, LinearLayout container) {
+                                ^
+  symbol:   class PortfolioTemporalSummary
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:19: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.Position;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:21: error: package br.com.valorae.carteira.ui.base does not exist
+import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                      ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:22: error: package br.com.valorae.carteira.ui.widgets does not exist
+import br.com.valorae.carteira.ui.widgets.DonutChartView;
+                                         ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:23: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.DateUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:24: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.JsonUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:25: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.MoneyUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:31: error: cannot find symbol
+public class PortfolioFragment extends BaseAsyncFragment {
+                                       ^
+  symbol: class BaseAsyncFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:35: error: cannot find symbol
+    private DonutChartView chartView;
+            ^
+  symbol:   class DonutChartView
+  location: class PortfolioFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:99: error: cannot find symbol
+    private void renderAllocation(List<Position> positions) {
+                                       ^
+  symbol:   class Position
+  location: class PortfolioFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:123: error: cannot find symbol
+    private void showAllocationModal(List<Position> positions, Map<String, Double> byClass, List<DonutChartView.Segment> classSegments, double total) {
+                                          ^
+  symbol:   class Position
+  location: class PortfolioFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:123: error: package DonutChartView does not exist
+    private void showAllocationModal(List<Position> positions, Map<String, Double> byClass, List<DonutChartView.Segment> classSegments, double total) {
+                                                                                                               ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:192: error: cannot find symbol
+    private void showAssetDetails(Position position) {
+                                  ^
+  symbol:   class Position
+  location: class PortfolioFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:209: error: cannot find symbol
+    private void renderAssetDialog(Position position, AssetPayload payload, boolean offline) {
+                                   ^
+  symbol:   class Position
+  location: class PortfolioFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:346: error: cannot find symbol
+        private final List<Position> items = new ArrayList<>();
+                           ^
+  symbol:   class Position
+  location: class PortfolioFragment.PortfolioAdapter
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:350: error: cannot find symbol
+        void submit(List<Position> data, Map<String, QuoteInfo> quoteMap) {
+                         ^
+  symbol:   class Position
+  location: class PortfolioFragment.PortfolioAdapter
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:26: error: package br.com.valorae.carteira.ui.base does not exist
+import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                      ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:27: error: package br.com.valorae.carteira.ui.widgets does not exist
+import br.com.valorae.carteira.ui.widgets.LineChartView;
+                                         ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:28: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.JsonUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:29: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.MoneyUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:31: error: cannot find symbol
+public class AnalysisFragment extends BaseAsyncFragment {
+                                      ^
+  symbol: class BaseAsyncFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:42: error: cannot find symbol
+    private LineChartView assetChart;
+            ^
+  symbol:   class LineChartView
+  location: class AnalysisFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:13: error: package br.com.valorae.carteira.ui.base does not exist
+import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                      ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:14: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.DateUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:15: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.JsonUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:16: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.MoneyUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:20: error: cannot find symbol
+public class MarketFragment extends BaseAsyncFragment {
+                                    ^
+  symbol: class BaseAsyncFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:24: error: cannot find symbol
+import br.com.valorae.carteira.data.StartupSyncStore;
+                                   ^
+  symbol:   class StartupSyncStore
+  location: package br.com.valorae.carteira.data
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:26: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.PortfolioTemporalSummary;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:27: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.Position;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:28: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.ImportResult;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:29: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.ProxyAuditItem;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:31: error: package br.com.valorae.carteira.ui.base does not exist
+import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                      ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:32: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.DateUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:33: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.JsonUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:34: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.MoneyUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:36: error: cannot find symbol
+public class SettingsFragment extends BaseAsyncFragment {
+                                      ^
+  symbol: class BaseAsyncFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:50: error: cannot find symbol
+    private StartupSyncStore startupSyncStore;
+            ^
+  symbol:   class StartupSyncStore
+  location: class SettingsFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:275: error: cannot find symbol
+    private void renderProxySync(List<ProxyAuditItem> items) {
+                                      ^
+  symbol:   class ProxyAuditItem
+  location: class SettingsFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:316: error: cannot find symbol
+    private void renderProxyAudit(List<ProxyAuditItem> items) {
+                                       ^
+  symbol:   class ProxyAuditItem
+  location: class SettingsFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:469: error: cannot find symbol
+    private void renderDataResult(String title, ImportResult result) {
+                                                ^
+  symbol:   class ImportResult
+  location: class SettingsFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:12: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.Position;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:13: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.ImportResult;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:14: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.PortfolioTemporalSummary;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:15: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.ProxyAuditItem;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:16: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.BackupJsonManager;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:17: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.B3XlsxImporter;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:18: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.DateUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:19: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.JsonUtils;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:20: error: package br.com.valorae.carteira.util does not exist
+import br.com.valorae.carteira.util.PortfolioMath;
+                                   ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:23: error: cannot find symbol
+    private final LocalPortfolioStore store;
+                  ^
+  symbol:   class LocalPortfolioStore
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:24: error: cannot find symbol
+    private final ValoraeClient client;
+                  ^
+  symbol:   class ValoraeClient
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:25: error: cannot find symbol
+    private final ProxyDataCache cache;
+                  ^
+  symbol:   class ProxyDataCache
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:34: error: cannot find symbol
+    public List<Position> positions() { return store.listPositions(); }
+                ^
+  symbol:   class Position
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:63: error: cannot find symbol
+    public PortfolioTemporalSummary temporalSummary() { return PortfolioMath.portfolioSummary(positions()); }
+           ^
+  symbol:   class PortfolioTemporalSummary
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:69: error: cannot find symbol
+    public ImportResult importBackupJson(String json, boolean replaceAll) throws JSONException {
+           ^
+  symbol:   class ImportResult
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:79: error: cannot find symbol
+    public ImportResult importB3Xlsx(InputStream input, boolean replaceAll) throws Exception {
+           ^
+  symbol:   class ImportResult
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:232: error: cannot find symbol
+    public List<ProxyAuditItem> syncNow() {
+                ^
+  symbol:   class ProxyAuditItem
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:253: error: cannot find symbol
+    public List<ProxyAuditItem> syncOnAppOpen() {
+                ^
+  symbol:   class ProxyAuditItem
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:320: error: cannot find symbol
+    public String syncSummaryText(List<ProxyAuditItem> items) {
+                                       ^
+  symbol:   class ProxyAuditItem
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:338: error: cannot find symbol
+    public List<ProxyAuditItem> proxyAudit() {
+                ^
+  symbol:   class ProxyAuditItem
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:399: error: cannot find symbol
+    private void audit(List<ProxyAuditItem> out, String title, String route, AuditCall call, String successLabel) {
+                            ^
+  symbol:   class ProxyAuditItem
+  location: class PortfolioRepository
+/app/applet/app/src/main/java/br/com/valorae/carteira/MainActivity.java:19: error: cannot find symbol
+import br.com.valorae.carteira.data.StartupSyncStore;
+                                   ^
+  symbol:   class StartupSyncStore
+  location: package br.com.valorae.carteira.data
+/app/applet/app/src/main/java/br/com/valorae/carteira/MainActivity.java:20: error: package br.com.valorae.carteira.model does not exist
+import br.com.valorae.carteira.model.ProxyAuditItem;
+                                    ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:40: error: method does not override or implement a method from a supertype
+    @Nullable @Override
+              ^
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:43: error: cannot find symbol
+        initRepository();
+        ^
+  symbol:   method initRepository()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:61: error: cannot find symbol
+        portfolioContainer.addView(UiFactory.rowCard(requireContext(), "Tempo e Alocação", "Resumo temporal da sua carteira e divisões.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                     ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:61: error: cannot find symbol
+        portfolioContainer.addView(UiFactory.rowCard(requireContext(), "Tempo e Alocação", "Resumo temporal da sua carteira e divisões.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                                             ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:65: error: cannot find symbol
+        agendaContainer.addView(UiFactory.rowCard(requireContext(), "Agenda", "Próximos proventos e pagamentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                  ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:65: error: cannot find symbol
+        agendaContainer.addView(UiFactory.rowCard(requireContext(), "Agenda", "Próximos proventos e pagamentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:69: error: cannot find symbol
+        pastDividendsContainer.addView(UiFactory.rowCard(requireContext(), "Proventos Passados", "Histórico de recebimentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                         ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:69: error: cannot find symbol
+        pastDividendsContainer.addView(UiFactory.rowCard(requireContext(), "Proventos Passados", "Histórico de recebimentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                             ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:73: error: cannot find symbol
+        insightsContainer.addView(UiFactory.rowCard(requireContext(), "Inteligência Artificial", "Insights técnicos e saúde do Proxy.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                    ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:73: error: cannot find symbol
+        insightsContainer.addView(UiFactory.rowCard(requireContext(), "Inteligência Artificial", "Insights técnicos e saúde do Proxy.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                                           ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:80: error: cannot find symbol
+        com.google.android.material.bottomsheet.BottomSheetDialog dialog = new com.google.android.material.bottomsheet.BottomSheetDialog(requireContext(), R.style.Valorae_BottomSheetDialog);
+                                                                                                                                         ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:81: error: cannot find symbol
+        View view = getLayoutInflater().inflate(R.layout.dialog_settings_category, null);
+                    ^
+  symbol:   method getLayoutInflater()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:83: error: cannot find symbol
+        UiFactory.setupBottomSheet(dialog, requireContext());
+                                           ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:94: error: cannot find symbol
+        TextView tvTimeline = new TextView(requireContext());
+                                           ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:96: error: cannot find symbol
+        tvTimeline.setTextAppearance(requireContext(), R.style.Valorae_SectionTitle);
+                                     ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:98: error: cannot find symbol
+        LinearLayout timelineContainer = new LinearLayout(requireContext());
+                                                          ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:102: error: cannot find symbol
+        TextView tvAlloc = new TextView(requireContext());
+                                        ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:104: error: cannot find symbol
+        tvAlloc.setTextAppearance(requireContext(), R.style.Valorae_SectionTitle);
+                                  ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:106: error: cannot find symbol
+        LinearLayout allocContainer = new LinearLayout(requireContext());
+                                                       ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:108: error: cannot find symbol
+        allocContainer.setPadding(0, 0, 0, UiFactory.dp(requireContext(), 20));
+                                                        ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:111: error: cannot find symbol
+        renderTimeline(lastTemporal != null ? lastTemporal : repository.temporalSummary(), timelineContainer);
+                                                             ^
+  symbol:   variable repository
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:120: error: cannot find symbol
+        TextView tvNext = new TextView(requireContext());
+                                       ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:122: error: cannot find symbol
+        tvNext.setTextAppearance(requireContext(), R.style.Valorae_SectionTitle);
+                                 ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:124: error: cannot find symbol
+        LinearLayout nextCont = new LinearLayout(requireContext());
+                                                 ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:126: error: cannot find symbol
+        nextCont.setPadding(0, 0, 0, UiFactory.dp(requireContext(), 20));
+                                                  ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:132: error: cannot find symbol
+            nextCont.addView(UiFactory.rowCard(requireContext(), "Sem dados remotos", "Aguardando sincronização com Proxy", "Local", ContextCompat.getColor(requireContext(), R.color.valorae_warning)));
+                                               ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+/app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:132: error: cannot find symbol
+            nextCont.addView(UiFactory.rowCard(requireContext(), "Sem dados remotos", "Aguardando sincronização com Proxy", "Local", ContextCompat.getColor(requireContext(), R.color.valorae_warning)));
+                                                                                                                                                            ^
+  symbol:   method requireContext()
+  location: class HomeFragment
+Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+100 errors
+
+[Incubating] Problems report is available at: file:///app/applet/build/reports/problems/problems-report.html
+
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+Execution failed for task ':app:compileDebugJavaWithJavac'.
+> Compilation failed; see the compiler output below.
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:17: error: cannot find symbol
+  import br.com.valorae.carteira.data.StartupSyncStore;
+                                     ^
+    symbol:   class StartupSyncStore
+    location: package br.com.valorae.carteira.data
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:38: error: cannot find symbol
+      private PortfolioTemporalSummary lastTemporal;
+              ^
+    symbol:   class PortfolioTemporalSummary
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:252: error: cannot find symbol
+      private void renderTimeline(PortfolioTemporalSummary temporal, LinearLayout container) {
+                                  ^
+    symbol:   class PortfolioTemporalSummary
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:35: error: cannot find symbol
+      private DonutChartView chartView;
+              ^
+    symbol:   class DonutChartView
+    location: class PortfolioFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:99: error: cannot find symbol
+      private void renderAllocation(List<Position> positions) {
+                                         ^
+    symbol:   class Position
+    location: class PortfolioFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:123: error: cannot find symbol
+      private void showAllocationModal(List<Position> positions, Map<String, Double> byClass, List<DonutChartView.Segment> classSegments, double total) {
+                                            ^
+    symbol:   class Position
+    location: class PortfolioFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:192: error: cannot find symbol
+      private void showAssetDetails(Position position) {
+                                    ^
+    symbol:   class Position
+    location: class PortfolioFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:209: error: cannot find symbol
+      private void renderAssetDialog(Position position, AssetPayload payload, boolean offline) {
+                                     ^
+    symbol:   class Position
+    location: class PortfolioFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:346: error: cannot find symbol
+          private final List<Position> items = new ArrayList<>();
+                             ^
+    symbol:   class Position
+    location: class PortfolioFragment.PortfolioAdapter
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:350: error: cannot find symbol
+          void submit(List<Position> data, Map<String, QuoteInfo> quoteMap) {
+                           ^
+    symbol:   class Position
+    location: class PortfolioFragment.PortfolioAdapter
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:42: error: cannot find symbol
+      private LineChartView assetChart;
+              ^
+    symbol:   class LineChartView
+    location: class AnalysisFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:24: error: cannot find symbol
+  import br.com.valorae.carteira.data.StartupSyncStore;
+                                     ^
+    symbol:   class StartupSyncStore
+    location: package br.com.valorae.carteira.data
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:50: error: cannot find symbol
+      private StartupSyncStore startupSyncStore;
+              ^
+    symbol:   class StartupSyncStore
+    location: class SettingsFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:275: error: cannot find symbol
+      private void renderProxySync(List<ProxyAuditItem> items) {
+                                        ^
+    symbol:   class ProxyAuditItem
+    location: class SettingsFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:316: error: cannot find symbol
+      private void renderProxyAudit(List<ProxyAuditItem> items) {
+                                         ^
+    symbol:   class ProxyAuditItem
+    location: class SettingsFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:469: error: cannot find symbol
+      private void renderDataResult(String title, ImportResult result) {
+                                                  ^
+    symbol:   class ImportResult
+    location: class SettingsFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:23: error: cannot find symbol
+      private final LocalPortfolioStore store;
+                    ^
+    symbol:   class LocalPortfolioStore
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:24: error: cannot find symbol
+      private final ValoraeClient client;
+                    ^
+    symbol:   class ValoraeClient
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:25: error: cannot find symbol
+      private final ProxyDataCache cache;
+                    ^
+    symbol:   class ProxyDataCache
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:34: error: cannot find symbol
+      public List<Position> positions() { return store.listPositions(); }
+                  ^
+    symbol:   class Position
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:63: error: cannot find symbol
+      public PortfolioTemporalSummary temporalSummary() { return PortfolioMath.portfolioSummary(positions()); }
+             ^
+    symbol:   class PortfolioTemporalSummary
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:69: error: cannot find symbol
+      public ImportResult importBackupJson(String json, boolean replaceAll) throws JSONException {
+             ^
+    symbol:   class ImportResult
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:79: error: cannot find symbol
+      public ImportResult importB3Xlsx(InputStream input, boolean replaceAll) throws Exception {
+             ^
+    symbol:   class ImportResult
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:232: error: cannot find symbol
+      public List<ProxyAuditItem> syncNow() {
+                  ^
+    symbol:   class ProxyAuditItem
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:253: error: cannot find symbol
+      public List<ProxyAuditItem> syncOnAppOpen() {
+                  ^
+    symbol:   class ProxyAuditItem
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:320: error: cannot find symbol
+      public String syncSummaryText(List<ProxyAuditItem> items) {
+                                         ^
+    symbol:   class ProxyAuditItem
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:338: error: cannot find symbol
+      public List<ProxyAuditItem> proxyAudit() {
+                  ^
+    symbol:   class ProxyAuditItem
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:399: error: cannot find symbol
+      private void audit(List<ProxyAuditItem> out, String title, String route, AuditCall call, String successLabel) {
+                              ^
+    symbol:   class ProxyAuditItem
+    location: class PortfolioRepository
+  /app/applet/app/src/main/java/br/com/valorae/carteira/MainActivity.java:19: error: cannot find symbol
+  import br.com.valorae.carteira.data.StartupSyncStore;
+                                     ^
+    symbol:   class StartupSyncStore
+    location: package br.com.valorae.carteira.data
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:111: error: cannot find symbol
+          renderTimeline(lastTemporal != null ? lastTemporal : repository.temporalSummary(), timelineContainer);
+                                                               ^
+    symbol:   variable repository
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:40: error: method does not override or implement a method from a supertype
+      @Nullable @Override
+                ^
+  Note: Some messages have been simplified; recompile with -Xdiags:verbose to get full output
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:26: error: cannot find symbol
+  public class HomeFragment extends BaseAsyncFragment {
+                                    ^
+    symbol: class BaseAsyncFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:31: error: cannot find symbol
+  public class PortfolioFragment extends BaseAsyncFragment {
+                                         ^
+    symbol: class BaseAsyncFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:31: error: cannot find symbol
+  public class AnalysisFragment extends BaseAsyncFragment {
+                                        ^
+    symbol: class BaseAsyncFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:20: error: cannot find symbol
+  public class MarketFragment extends BaseAsyncFragment {
+                                      ^
+    symbol: class BaseAsyncFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:36: error: cannot find symbol
+  public class SettingsFragment extends BaseAsyncFragment {
+                                        ^
+    symbol: class BaseAsyncFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:43: error: cannot find symbol
+          initRepository();
+          ^
+    symbol:   method initRepository()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:61: error: cannot find symbol
+          portfolioContainer.addView(UiFactory.rowCard(requireContext(), "Tempo e Alocação", "Resumo temporal da sua carteira e divisões.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                       ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:61: error: cannot find symbol
+          portfolioContainer.addView(UiFactory.rowCard(requireContext(), "Tempo e Alocação", "Resumo temporal da sua carteira e divisões.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                                               ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:65: error: cannot find symbol
+          agendaContainer.addView(UiFactory.rowCard(requireContext(), "Agenda", "Próximos proventos e pagamentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                    ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:65: error: cannot find symbol
+          agendaContainer.addView(UiFactory.rowCard(requireContext(), "Agenda", "Próximos proventos e pagamentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                  ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:69: error: cannot find symbol
+          pastDividendsContainer.addView(UiFactory.rowCard(requireContext(), "Proventos Passados", "Histórico de recebimentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                           ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:69: error: cannot find symbol
+          pastDividendsContainer.addView(UiFactory.rowCard(requireContext(), "Proventos Passados", "Histórico de recebimentos.", "Ver", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                               ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:73: error: cannot find symbol
+          insightsContainer.addView(UiFactory.rowCard(requireContext(), "Inteligência Artificial", "Insights técnicos e saúde do Proxy.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                      ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:73: error: cannot find symbol
+          insightsContainer.addView(UiFactory.rowCard(requireContext(), "Inteligência Artificial", "Insights técnicos e saúde do Proxy.", "Explorar", ContextCompat.getColor(requireContext(), R.color.valorae_primary)));
+                                                                                                                                                                             ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:80: error: cannot find symbol
+          com.google.android.material.bottomsheet.BottomSheetDialog dialog = new com.google.android.material.bottomsheet.BottomSheetDialog(requireContext(), R.style.Valorae_BottomSheetDialog);
+                                                                                                                                           ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:81: error: cannot find symbol
+          View view = getLayoutInflater().inflate(R.layout.dialog_settings_category, null);
+                      ^
+    symbol:   method getLayoutInflater()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:83: error: cannot find symbol
+          UiFactory.setupBottomSheet(dialog, requireContext());
+                                             ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:94: error: cannot find symbol
+          TextView tvTimeline = new TextView(requireContext());
+                                             ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:96: error: cannot find symbol
+          tvTimeline.setTextAppearance(requireContext(), R.style.Valorae_SectionTitle);
+                                       ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:98: error: cannot find symbol
+          LinearLayout timelineContainer = new LinearLayout(requireContext());
+                                                            ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:102: error: cannot find symbol
+          TextView tvAlloc = new TextView(requireContext());
+                                          ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:104: error: cannot find symbol
+          tvAlloc.setTextAppearance(requireContext(), R.style.Valorae_SectionTitle);
+                                    ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:106: error: cannot find symbol
+          LinearLayout allocContainer = new LinearLayout(requireContext());
+                                                         ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:108: error: cannot find symbol
+          allocContainer.setPadding(0, 0, 0, UiFactory.dp(requireContext(), 20));
+                                                          ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:120: error: cannot find symbol
+          TextView tvNext = new TextView(requireContext());
+                                         ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:122: error: cannot find symbol
+          tvNext.setTextAppearance(requireContext(), R.style.Valorae_SectionTitle);
+                                   ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:124: error: cannot find symbol
+          LinearLayout nextCont = new LinearLayout(requireContext());
+                                                   ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:126: error: cannot find symbol
+          nextCont.setPadding(0, 0, 0, UiFactory.dp(requireContext(), 20));
+                                                    ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:132: error: cannot find symbol
+              nextCont.addView(UiFactory.rowCard(requireContext(), "Sem dados remotos", "Aguardando sincronização com Proxy", "Local", ContextCompat.getColor(requireContext(), R.color.valorae_warning)));
+                                                 ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:132: error: cannot find symbol
+              nextCont.addView(UiFactory.rowCard(requireContext(), "Sem dados remotos", "Aguardando sincronização com Proxy", "Local", ContextCompat.getColor(requireContext(), R.color.valorae_warning)));
+                                                                                                                                                              ^
+    symbol:   method requireContext()
+    location: class HomeFragment
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:18: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.PortfolioTemporalSummary;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:19: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.Position;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:21: error: package br.com.valorae.carteira.ui.base does not exist
+  import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                        ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:22: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.DateUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:23: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.JsonUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/home/HomeFragment.java:24: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.MoneyUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:19: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.Position;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:21: error: package br.com.valorae.carteira.ui.base does not exist
+  import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                        ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:22: error: package br.com.valorae.carteira.ui.widgets does not exist
+  import br.com.valorae.carteira.ui.widgets.DonutChartView;
+                                           ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:23: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.DateUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:24: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.JsonUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:25: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.MoneyUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/portfolio/PortfolioFragment.java:123: error: package DonutChartView does not exist
+      private void showAllocationModal(List<Position> positions, Map<String, Double> byClass, List<DonutChartView.Segment> classSegments, double total) {
+                                                                                                                 ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:26: error: package br.com.valorae.carteira.ui.base does not exist
+  import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                        ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:27: error: package br.com.valorae.carteira.ui.widgets does not exist
+  import br.com.valorae.carteira.ui.widgets.LineChartView;
+                                           ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:28: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.JsonUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/analysis/AnalysisFragment.java:29: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.MoneyUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:13: error: package br.com.valorae.carteira.ui.base does not exist
+  import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                        ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:14: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.DateUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:15: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.JsonUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/market/MarketFragment.java:16: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.MoneyUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:26: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.PortfolioTemporalSummary;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:27: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.Position;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:28: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.ImportResult;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:29: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.ProxyAuditItem;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:31: error: package br.com.valorae.carteira.ui.base does not exist
+  import br.com.valorae.carteira.ui.base.BaseAsyncFragment;
+                                        ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:32: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.DateUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:33: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.JsonUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/ui/settings/SettingsFragment.java:34: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.MoneyUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:12: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.Position;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:13: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.ImportResult;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:14: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.PortfolioTemporalSummary;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:15: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.ProxyAuditItem;
+                                      ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:16: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.BackupJsonManager;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:17: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.B3XlsxImporter;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:18: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.DateUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:19: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.JsonUtils;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/data/PortfolioRepository.java:20: error: package br.com.valorae.carteira.util does not exist
+  import br.com.valorae.carteira.util.PortfolioMath;
+                                     ^
+  /app/applet/app/src/main/java/br/com/valorae/carteira/MainActivity.java:20: error: package br.com.valorae.carteira.model does not exist
+  import br.com.valorae.carteira.model.ProxyAuditItem;
+                                      ^
+  100 errors
+
+* Try:
+> Check your code and dependencies to fix the compilation error(s)
+> Run with --scan to get full insights from a Build Scan (powered by Develocity).
+
+BUILD FAILED in 2s
+8 actionable tasks: 1 executed, 7 up-to-date

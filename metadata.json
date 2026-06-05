@@ -1,0 +1,6 @@
+{
+  "name": "VALORAE Carteira",
+  "description": "Gerenciador de carteiras focado em experiência limpa, removendo jargões técnicos para facilitar a tomada de decisão.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

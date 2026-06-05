@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_home" android:title="Início" android:icon="@android:drawable/ic_menu_view" />
+    <item android:id="@+id/nav_portfolio" android:title="Carteira" android:icon="@android:drawable/ic_menu_agenda" />
+    <item android:id="@+id/nav_analysis" android:title="Análise" android:icon="@android:drawable/ic_menu_sort_by_size" />
+    <item android:id="@+id/nav_market" android:title="Mercado" android:icon="@android:drawable/ic_menu_compass" />
+    <item android:id="@+id/nav_settings" android:title="Mais" android:icon="@android:drawable/ic_menu_manage" />
+</menu>

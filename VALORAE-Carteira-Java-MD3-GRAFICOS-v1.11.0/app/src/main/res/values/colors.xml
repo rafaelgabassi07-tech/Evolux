@@ -1,0 +1,14 @@
+<resources>
+    <color name="valorae_primary">#1565C0</color>
+    <color name="valorae_primary_container">#DCEBFF</color>
+    <color name="valorae_background">#F6F8FC</color>
+    <color name="valorae_surface">#FFFFFF</color>
+    <color name="valorae_surface_variant">#E7ECF3</color>
+    <color name="valorae_text_primary">#101828</color>
+    <color name="valorae_text_secondary">#667085</color>
+    <color name="valorae_positive">#16A34A</color>
+    <color name="valorae_negative">#DC2626</color>
+    <color name="valorae_warning">#D97706</color>
+    <color name="bottom_nav_active">#1565C0</color>
+    <color name="bottom_nav_inactive">#667085</color>
+</resources>

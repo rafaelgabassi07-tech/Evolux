@@ -1,0 +1,9 @@
+<resources>
+    <style name="Theme.Valorae" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/valorae_primary</item>
+        <item name="colorPrimaryContainer">@color/valorae_primary_container</item>
+        <item name="colorSecondary">@color/valorae_positive</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/valorae_surface</item>
+    </style>
+</resources>

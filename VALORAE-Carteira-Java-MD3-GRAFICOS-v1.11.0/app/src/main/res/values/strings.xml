@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">VALORAE Carteira</string>
+    <string name="proxy_base_url">https://servidor-valorae.vercel.app</string>
+</resources>
